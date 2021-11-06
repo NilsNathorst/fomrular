@@ -1,2 +1,2 @@
-# fomrular
+# Formular
 Meat and potatis
