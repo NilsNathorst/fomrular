@@ -1,13 +1,15 @@
 {
+  "include": ["./src/**/*.ts"],
   "compilerOptions": {
-    "jsx": "react",
-    "target": "es5",
-    "module": "commonjs",
     "lib": ["es6", "dom"],
-    "outDir": "dist",
-    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": false,
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "exclude": ["node_modules", "dist"]
+    "rootDir": "./src",
+    "outDir": "./dist"
+  }
 }

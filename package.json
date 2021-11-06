@@ -2,13 +2,18 @@
   "name": "formel",
   "version": "1.0.0",
   "description": "Meat and potatis",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
   "scripts": {
-    "build": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-types": "tsc --project ./tsconfig.types.json",
+    "build-cjs": "tsc --project ./tsconfig.cjs.json",
+    "build-esm": "tsc --project ./tsconfig.esm.json",
+    "build": "npx del-cli dist && npm run build-cjs && npm run build-esm && npm run build-types && echo 'Successfully built'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NilsNathorst/formular.git"
+    "url": "git+https://github.com/NilsNathorst/formel.git"
   },
   "files": [
     "dist"
@@ -24,9 +29,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NilsNathorst/formular/issues"
+    "url": "https://github.com/NilsNathorst/formel/issues"
   },
-  "homepage": "https://github.com/NilsNathorst/formular#readme",
+  "homepage": "https://github.com/NilsNathorst/formel#readme",
   "peerDependencies": {
     "react": ">=17.0.2",
     "react-dom": ">=17.0.2"

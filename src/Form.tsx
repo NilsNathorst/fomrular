@@ -6,5 +6,5 @@ interface FormProps {
 }
 
 export const Form = (props: FormProps) => {
-  return <div data-formular-id="form-container">{props.children}</div>;
+  return <div data-formel-id="form-container">{props.children}</div>;
 };
