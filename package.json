@@ -1,6 +1,6 @@
 {
   "name": "formel",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Meat and potatis",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -9,7 +9,10 @@
     "build-types": "tsc --project ./tsconfig.types.json",
     "build-cjs": "tsc --project ./tsconfig.cjs.json",
     "build-esm": "tsc --project ./tsconfig.esm.json",
-    "build": "npx del-cli dist && npm run build-cjs && npm run build-esm && npm run build-types && echo 'Successfully built'"
+    "build": "npx del-cli dist && npm run build-cjs && npm run build-esm && npm run build-types && echo 'Successfully built'",
+    "prepublish": "git diff-index --quiet HEAD --",
+    "publish": "npm publish",
+    "postpublish": "echo \"Published successfully\""
   },
   "repository": {
     "type": "git",
