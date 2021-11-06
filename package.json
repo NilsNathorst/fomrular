@@ -1,6 +1,6 @@
 {
-  "name": "formel",
-  "version": "1.0.1",
+  "name": "formalia",
+  "version": "0.0.0",
   "description": "Meat and potatis",
   "main": "dist/index.js",
   "module": "esm/index.js",
