@@ -10,9 +10,9 @@
     "build-cjs": "tsc --project ./tsconfig.cjs.json",
     "build-esm": "tsc --project ./tsconfig.esm.json",
     "build": "npx del-cli dist && npm run build-cjs && npm run build-esm && npm run build-types && echo 'Successfully built'",
-    "prepublish": "git diff-index --quiet HEAD --",
-    "publish": "npm publish",
-    "postpublish": "echo \"Published successfully\""
+    "prepub": "git diff-index --quiet HEAD --",
+    "pub": "npm publish",
+    "postpub": "echo \"Published successfully\""
   },
   "repository": {
     "type": "git",
