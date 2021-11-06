@@ -1,6 +1,6 @@
 {
   "name": "formalia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Meat and potatis",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -11,7 +11,7 @@
     "build-esm": "tsc --project ./tsconfig.esm.json",
     "build": "npx del-cli dist && npm run build-cjs && npm run build-esm && npm run build-types && echo 'Successfully built'",
     "prepub": "git diff-index --quiet HEAD --",
-    "pub": "npm publish",
+    "pub": "npm publish --access public",
     "postpub": "echo \"Published successfully\""
   },
   "repository": {
